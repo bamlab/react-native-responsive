@@ -8,13 +8,14 @@ import {
 	MediaQueryDebug,
 	MediaQueryDecorator
 } from "react-native-responsive";
+import PropTypes from "prop-types";
 
 @MediaQueryDecorator({
 	maxDeviceWidth: 1280
 }, true)
 class Debug extends React.Component {
 	static propTypes = {
-		consoleDebug: React.PropTypes.bool.isRequired
+		consoleDebug: PropTypes.bool.isRequired
 	};
 	static defaultProps = {
 		consoleDebug: false

@@ -1,9 +1,9 @@
-import React, {
-	PropTypes
-} from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import {
 	View,
-	Text
+	Text,
+	ViewPropType
 } from "react-native";
 
 const Detail = (props) => {
@@ -22,7 +22,7 @@ const Detail = (props) => {
 };
 
 Detail.propTypes = {
-	...View.propTypes,
+	...ViewPropType,
 	children: PropTypes.node.isRequired
 };
 
